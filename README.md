@@ -4,7 +4,7 @@ A simple download page for the IntelScroll Android app.
 
 Website: https://eyuphanozdemir.github.io/intelscroll/
 
-Download: https://github.com/EyuphanOzdemir/intelscroll/releases/download/v1.0.0/IntelScroll-1.0.0.apk
+Download: https://github.com/EyuphanOzdemir/intelscroll/releases/download/v1.1.0/IntelScroll-1.1.0.apk
 
 IntelScroll turns your topics into short facts, concepts, outlines, diagrams, Q&A, and quizzes using your chosen AI provider. Bring your own API key; prompts are sent to that provider and its usage charges may apply.
 
