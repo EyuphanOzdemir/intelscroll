@@ -1,12 +1,25 @@
 # IntelScroll
 
-A simple download page for the IntelScroll Android app.
+A download and introduction page for the IntelScroll Android app.
 
 Website: https://eyuphanozdemir.github.io/intelscroll/
 
 Download: https://github.com/EyuphanOzdemir/intelscroll/releases/download/v1.4.0/IntelScroll-1.4.0.apk
 
 IntelScroll turns your topics into short facts, concepts, outlines, diagrams, Q&A, and quizzes using your chosen AI provider. An invitation code unlocks Gemini 3.1 Flash-Lite during first-launch setup. Email ozdemireyuphan@gmail.com to request a code, or continue without one and add your own AI provider on Models. No API credential is bundled in the APK; provider keys are stored securely on the device. Availability depends on quotas and provider limits. Prompts are sent to your chosen provider, and usage charges may apply.
+
+## Why IntelScroll?
+
+IntelScroll gives the spare moments you might spend doomscrolling a useful direction: short learning cards about subjects you choose. Create broad or specific topics, add custom instructions, and generate new content on demand in six learning modes. The app is free with no IntelScroll subscription; AI provider usage may incur charges.
+
+Apps such as [Deepstash](https://deepstash.com/) help readers discover ideas from a published library and offer free and paid plans. IntelScroll focuses on generating cards for your own topics with your chosen AI model. Save entries locally, share them, or export a topic's saved entries as a text file. AI-generated content can contain mistakes.
+
+## Current controls
+
+- Swipe right across the content panel, or tap **New**, to generate a card.
+- Swipe left, or tap **Save**, to save the current card.
+- Tap **Share** to share a card, or **Expand** to add detail once per card.
+- Scroll vertically to read. Hide or show the topic, model and mode controls as needed.
 
 ## Install on Android
 

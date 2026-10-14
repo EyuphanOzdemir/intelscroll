@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f8f7f3">
-  <meta name="description" content="Download IntelScroll for Android. Explore your topics with your own AI provider, or use an invitation code to unlock the Gemini starter.">
+  <meta name="description" content="Make spare moments more useful with IntelScroll: AI-generated learning cards on your own topics, six learning modes, and your choice of AI provider. Free Android app; provider usage may cost extra.">
   <title>IntelScroll</title>
   <style>
     :root { color-scheme: light; --paper: #f8f7f3; --ink: #182431; --muted: #536170; --blue: #185acb; --line: #d7dcdF; }
@@ -27,7 +27,18 @@
     .download:active { transform: translateY(1px); }
     .download svg { width: 20px; height: 20px; }
     .metadata { margin: 11px 0 0; font-size: 13px; color: var(--muted); }
-    .gestures { display: flex; flex-wrap: wrap; gap: 12px 25px; margin: 39px 0 0; padding: 18px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .pricing { max-width: 655px; margin: 8px 0 0; font-size: 14px; color: var(--muted); }
+    .story { margin-top: 44px; padding-top: 30px; border-top: 1px solid var(--line); }
+    .story > p { max-width: 740px; margin: 0 0 16px; color: var(--muted); }
+    .features { display: grid; grid-template-columns: 1fr 1fr; gap: 22px 44px; margin: 26px 0 0; }
+    h3 { margin: 0 0 7px; font-size: 16px; line-height: 1.4; }
+    .features p { margin: 0; font-size: 14px; color: var(--muted); }
+    .modes { width: 100%; margin-top: 22px; border-collapse: collapse; font-size: 14px; }
+    .modes caption { text-align: left; margin-bottom: 10px; color: var(--muted); }
+    .modes th, .modes td { padding: 12px 0; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); }
+    .modes th { width: 110px; padding-right: 20px; font-weight: 650; }
+    .modes td { color: var(--muted); }
+    .gestures { display: flex; flex-wrap: wrap; gap: 12px 25px; margin: 18px 0 0; padding: 18px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
     .gestures span { display: inline-flex; align-items: center; gap: 9px; font-size: 14px; }
     .arrow { color: var(--blue); font-size: 21px; line-height: 1; font-weight: 600; }
     .mode-note { margin: 10px 0 0; color: var(--muted); font-size: 13px; }
@@ -49,7 +60,10 @@
       h1 { font-size: clamp(38px, 9vw, 52px); letter-spacing: -1.7px; }
       .intro { font-size: 17px; }
       .information { grid-template-columns: 1fr; gap: 29px; margin-top: 33px; }
-      .gestures { display: grid; grid-template-columns: 1fr 1fr; gap: 13px; margin-top: 31px; }
+      .story { margin-top: 33px; padding-top: 25px; }
+      .features { grid-template-columns: 1fr; gap: 20px; }
+      .modes th { width: 85px; padding-right: 12px; }
+      .gestures { display: grid; grid-template-columns: 1fr 1fr; gap: 13px; }
       footer { margin-top: 34px; }
     }
     @media (prefers-reduced-motion: reduce) { .download { transition: none; } }
@@ -64,26 +78,73 @@
     </header>
     <main>
       <section aria-labelledby="headline">
-        <p class="eyebrow">A little learning, every swipe</p>
-        <h1 id="headline">Follow your curiosity.<br>One card at a time.</h1>
-        <p class="intro">Choose a topic and an AI model. Explore bite-sized facts, concepts, outlines, diagrams, Q&amp;A and quizzes. Save what sticks, share what sparks an idea, and expand what interests you.</p>
+        <p class="eyebrow">A more useful way to scroll</p>
+        <h1 id="headline">Make scrolling<br>worth your time.</h1>
+        <p class="intro">A few minutes on your phone can become a small discovery. IntelScroll generates short learning cards about topics you choose, using your chosen AI model. Explore a fact, understand a concept, or try a quiz. Keep the ideas you want to come back to.</p>
         <a class="download" href="https://github.com/EyuphanOzdemir/intelscroll/releases/download/v1.4.0/IntelScroll-1.4.0.apk">Download Android APK<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M5 17v4h14v-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         <p class="metadata">Version 1.4 &middot; Android 7.0+ &middot; 71.4 MB</p>
-        <div class="gestures" aria-label="Actions from the card-edge arrows">
-          <span><span class="arrow" aria-hidden="true">&rarr;</span> Right: new content</span>
-          <span><span class="arrow" aria-hidden="true">&larr;</span> Left: save</span>
-          <span><span class="arrow" aria-hidden="true">&uarr;</span> Up: share</span>
-          <span><span class="arrow" aria-hidden="true">&darr;</span> Down: expand once</span>
+        <p class="pricing">Free app. No IntelScroll subscription. Your AI provider may charge for usage; invitation access depends on quotas and availability.</p>
+      </section>
+      <section class="story" aria-labelledby="purpose-heading">
+        <h2 id="purpose-heading">For the moments you'd usually doomscroll.</h2>
+        <p>Waiting for a bus. Taking a coffee break. Filling a few quiet minutes. It's easy to open a feed and keep scrolling without taking much away from it. IntelScroll gives that familiar habit a useful direction: a stream of small things to learn about something you actually care about.</p>
+        <p>Follow a passing curiosity or revisit a subject over time. Start with astronomy, Japanese history, or SQL. Make the topic as broad or specific as you like, then add instructions such as “use simple language” or “focus on practical examples.”</p>
+      </section>
+      <section class="story" aria-labelledby="difference-heading">
+        <h2 id="difference-heading">How does it differ from Deepstash?</h2>
+        <p><a href="https://deepstash.com/">Deepstash</a> helps people discover short ideas from books, articles, podcasts and videos, and offers both free and Pro plans. IntelScroll takes a different approach: you define the topic and an AI model generates cards for it on demand. Its focus is giving you control over what you explore and how you learn.</p>
+        <div class="features">
+          <div>
+            <h3>Your topics, your instructions.</h3>
+            <p>Create your own subjects and guide the explanations with a custom prompt. Explore a niche interest or a specific skill without waiting for it to appear in a content library.</p>
+          </div>
+          <div>
+            <h3>New cards when you ask.</h3>
+            <p>Each new card is generated for your selected topic and mode, rather than selected from a prewritten catalogue. Continue exploring while your provider's usage limits allow, or tap Expand for more detail on the current card.</p>
+          </div>
+          <div>
+            <h3>Choose the AI behind your feed.</h3>
+            <p>Use the Gemini starter with an invitation, bring your own provider key, or connect a custom provider. Select the model you prefer for your topic and budget.</p>
+          </div>
+          <div>
+            <h3>Keep what you learn.</h3>
+            <p>Save cards to your local collection and revisit them by topic. Share an entry, or export a topic's saved entries as a text file to keep in Downloads or use elsewhere.</p>
+          </div>
         </div>
-        <p class="mode-note">Start swipes on the faint arrows at the card edges, or tap an arrow or button. Text scrolls normally. Hide the topic, model and mode controls for more reading space; show them again anytime. Selecting a mode generates new content immediately.</p>
+      </section>
+      <section class="story" aria-labelledby="modes-heading">
+        <h2 id="modes-heading">One topic. Six ways to explore it.</h2>
+        <p>Sometimes you want a quick discovery. Sometimes you want the bigger picture or a chance to test yourself. Choose a mode to shape the next card.</p>
+        <table class="modes">
+          <caption>Choose how you want to learn</caption>
+          <tbody>
+            <tr><th scope="row">Fact</th><td>Discover one specific, interesting fact about your topic.</td></tr>
+            <tr><th scope="row">Concept</th><td>Understand a key idea through a short explanation.</td></tr>
+            <tr><th scope="row">Outline</th><td>See a subject organised into a text outline with main points and subpoints.</td></tr>
+            <tr><th scope="row">Diagram</th><td>Follow a process or relationship in a simple text flow diagram.</td></tr>
+            <tr><th scope="row">Q&amp;A</th><td>Explore a question, its answer, and the reasoning behind it.</td></tr>
+            <tr><th scope="row">Quiz</th><td>Try a multiple-choice question, then reveal the answer and explanation.</td></tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="story" aria-labelledby="controls-heading">
+        <h2 id="controls-heading">A simple rhythm: discover, save, explore.</h2>
+        <div class="gestures" aria-label="Current app controls">
+          <span><span class="arrow" aria-hidden="true">&rarr;</span> Swipe right or tap New</span>
+          <span><span class="arrow" aria-hidden="true">&larr;</span> Swipe left or tap Save</span>
+          <span>Tap Share to send a card</span>
+          <span>Tap Expand for more detail</span>
+        </div>
+        <p class="mode-note">Swipe left or right across the content panel. Scroll vertically to read the text. Each card can be expanded once. Hide the topic, model and mode controls for more reading space; show them again anytime. Selecting a different mode generates a new card.</p>
       </section>
       <div class="information">
         <section aria-labelledby="install-heading">
-          <h2 id="install-heading">Get started in a minute.</h2>
+          <h2 id="install-heading">Get started.</h2>
           <ol>
             <li>Download this APK on your Android phone.</li>
             <li>Open it. If Android asks, allow installation from your browser or file manager, then tap <strong>Install</strong>.</li>
-            <li>On first launch, enter your invitation code to unlock the Gemini starter. To request a code, email <a href="mailto:ozdemireyuphan@gmail.com?subject=IntelScroll%20invitation%20code">ozdemireyuphan@gmail.com</a>. Or choose <strong>I don't have one</strong> and add your own AI provider on Models. Then choose a topic and start learning.</li>
+            <li>On first launch, enter an invitation code for the Gemini starter, or choose <strong>I don't have one</strong> and add your own AI provider on Models.</li>
+            <li>Add a subject on Topics. On Home, choose your topic, model and learning mode, then tap <strong>New</strong> or swipe right.</li>
           </ol>
           <p>Once installed, the app runs without a computer.</p>
         </section>
@@ -93,6 +154,7 @@
           <p>Choosing <strong>I don't have one</strong> permanently dismisses invitation setup and hides the starter. You can then add your own model on the Models tab. Existing users see this setup once after updating; their custom models and saved entries are retained.</p>
           <p>Use your own API key from <strong>Gemini, OpenAI, DeepSeek, Kimi, Grok, OpenRouter or Claude</strong>, or connect a custom provider.</p>
           <p>Your own API keys are stored securely on your device; saved entries stay local. Prompts are sent to your chosen provider. Generation needs network access, and usage charges may apply when using your own provider.</p>
+          <p>Cards are AI-generated and can contain mistakes. Use them as a starting point for learning, and check facts that matter to you against reliable sources.</p>
           <details>
             <summary>APK checksum (SHA-256)</summary>
             <code>b307c0aa05267516a4560c7b5cae96af6ff7f12ea6c8e5902297468c810cef1e</code>
