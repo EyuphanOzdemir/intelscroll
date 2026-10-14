@@ -4,7 +4,7 @@ A simple download page for the IntelScroll Android app.
 
 Website: https://eyuphanozdemir.github.io/intelscroll/
 
-Download: https://github.com/EyuphanOzdemir/intelscroll/releases/download/v1.3.0/IntelScroll-1.3.0.apk
+Download: https://github.com/EyuphanOzdemir/intelscroll/releases/download/v1.4.0/IntelScroll-1.4.0.apk
 
 IntelScroll turns your topics into short facts, concepts, outlines, diagrams, Q&A, and quizzes using your chosen AI provider. An invitation code unlocks Gemini 3.1 Flash-Lite during first-launch setup. Email ozdemireyuphan@gmail.com to request a code, or continue without one and add your own AI provider on Models. No API credential is bundled in the APK; provider keys are stored securely on the device. Availability depends on quotas and provider limits. Prompts are sent to your chosen provider, and usage charges may apply.
 
