@@ -1,6 +1,7 @@
 # IntelScroll
 
-A download and introduction page for the IntelScroll Android app.
+A download and introduction page for IntelScroll, with a generated browser app
+in `app/` and Android APK downloads.
 
 Website: https://eyuphanozdemir.github.io/intelscroll/
 
@@ -42,4 +43,39 @@ The APK contains the app's JavaScript and runs without Metro or a computer. Inte
 
 ## Website hosting
 
-The single `index.html` page is published with GitHub Pages from the main branch. The APK is a GitHub release asset, not part of the website's Git history. This repository contains no API keys, app settings, signing files, or app source code.
+The introduction page and generated `app/` directory are published with GitHub
+Pages from the main branch. The APK is a GitHub release asset. Keep `.nojekyll`
+at the site root. Generated JavaScript and assets are published; keys, app
+settings, private signing files, and the native source tree are not included.
+
+## Browser app
+
+App URL: https://eyuphanozdemir.github.io/intelscroll/app/
+
+Choose an AI model on Models, create a subject on Topics, and use New, Expand,
+Save, and Share on Home. Saved cards can be shared or downloaded by topic as
+UTF-8 text. Use a provider that permits browser requests; model discovery can
+fail independently of generation. No live provider has yet been verified
+by this implementation's automated smoke test.
+
+On iPhone, open the app in Safari → Share → Add to Home Screen. Installation is
+optional. After an online visit the app shell and locally saved content can be
+opened offline; new generation needs internet access. Accept the Reload prompt
+to apply an app update while retaining your saved content.
+
+Topics, settings, invitation status, saved cards, and API keys live in this
+browser's localStorage. Clearing site data removes them. Data is separate from
+Android and other devices, with no cloud sync. Browser API keys are remembered
+in the browser profile, rather than a native secure keychain.
+
+Maintainers: from the private application checkout, run
+`./scripts/stage-web.ps1`, inspect this checkout's diff and status, then publish
+only when validation is complete. The script builds and copies assets without
+committing or pushing. Verify the app URL, icon/manifest/worker URLs, and original
+APK link after publication. Physical iPhone sharing and installation still need
+verification.
+
+Azure Functions CORS now permits the published website origin and local preview
+origins on port 4173; preflight responses were verified on 15 October 2026.
+Verify a valid and invalid invitation in the browser after deploying changes to
+invitation support.
