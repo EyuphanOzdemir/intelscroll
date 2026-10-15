@@ -5,7 +5,7 @@ in `app/` and Android APK downloads.
 
 Website: https://eyuphanozdemir.github.io/intelscroll/
 
-Download: https://github.com/EyuphanOzdemir/intelscroll/releases/download/v1.5.0/IntelScroll-1.5.0.apk
+Download: https://github.com/EyuphanOzdemir/intelscroll/releases/download/v1.6.0/IntelScroll-1.6.0.apk
 
 IntelScroll turns your topics into short facts, concepts, outlines, visual diagrams, Q&A, quizzes, quotations, comparisons, and true/false questions using your chosen AI provider. An invitation code unlocks Gemini 3.1 Flash-Lite during first-launch setup. Email ozdemireyuphan@gmail.com to request a code, or continue without one and add your own AI provider on Models. No API credential is bundled in the APK; provider keys are stored securely on the device. Availability depends on quotas and provider limits. Prompts are sent to your chosen provider, and usage charges may apply.
 
@@ -30,12 +30,12 @@ Apps such as [Deepstash](https://deepstash.com/) help readers discover ideas fro
 
 Existing users complete invitation setup once after updating; custom models and saved entries are retained.
 
-## New in 1.5.0
+## New in 1.6.0
 
-- Nine learning modes, including Quotes, Comparison (Compare in the app), and True/False.
-- Rendered Mermaid diagrams for relationship maps, mindmaps, timelines, process flows, and more. The renderer is bundled in the app.
-- More detailed expansions that preserve the selected format and the original quiz or true/false answers.
-- Clear messages when the model cannot provide suitable content, including reliable quotations.
+- Home remembers the latest selected topic, model, and learning mode across restarts. A sole topic or model is selected automatically.
+- Removed model/topic default switches and badges; the latest selection is used next time.
+- Mermaid diagrams initially fit the available panel. Zoomed diagrams scroll inside the diagram panel, and Fit resets the view.
+- The app icon appears beside Home. Provider connection errors remain visible with a retry for the failed action.
 
 Install the new APK over the existing app to retain saved entries and settings.
 
